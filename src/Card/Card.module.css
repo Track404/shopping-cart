@@ -1,0 +1,12 @@
+.card {
+  color: black;
+  background-color: lightslategray;
+}
+
+img {
+  width: 150px;
+}
+h1,
+h2 {
+  font-size: 24px;
+}
