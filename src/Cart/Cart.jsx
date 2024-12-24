@@ -1,13 +1,12 @@
-function Cart(isActive, onShow) {
+import Navbar from '../Navbar/Navbar';
+
+function Cartpage() {
   return (
     <>
-      {isActive ? (
-        <button>Hello</button>
-      ) : (
-        <button onClick={onShow}>Show</button>
-      )}
+      <Navbar />
+      <button>Hello</button>
     </>
   );
 }
 
-export default Cart;
+export default Cartpage;

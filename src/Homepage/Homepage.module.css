@@ -1,11 +1,11 @@
-h1 {
+.homepageBackground h1 {
   margin: 0;
   font-size: 38px;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 
-h2 {
+.homepageBackground h2 {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 50px;
@@ -28,7 +28,7 @@ h2 {
   align-items: center;
 }
 
-button {
+.buttonLink {
   padding: 10px;
   font-size: 24px;
   color: white;
@@ -38,7 +38,11 @@ button {
   background-image: url('src/assets/low-poly-grid-haikei.svg');
 }
 
-button:hover {
+.buttonLink:hover {
   transform: scale(1.05);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.buttonLink:visited {
+  color: white;
 }
