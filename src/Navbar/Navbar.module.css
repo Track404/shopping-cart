@@ -4,6 +4,7 @@
 }
 
 nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,4 +33,19 @@ a:hover {
   background-size: cover;
   width: 80px;
   height: 80px;
+}
+
+.showNumber {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+
+  width: 18px;
+  height: 18px;
+  color: white;
+  background-color: rgb(255, 34, 34);
+  border-radius: 100%;
 }

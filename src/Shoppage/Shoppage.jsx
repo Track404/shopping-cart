@@ -1,4 +1,3 @@
-import Navbar from '../Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -6,6 +5,7 @@ import LoadingScreen from '../LoadingScreen/LoadingScreen';
 import styles from './Shoppage.module.css';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+
 function Shoppage() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
@@ -27,7 +27,6 @@ function Shoppage() {
   if (loading)
     return (
       <>
-        <Navbar />
         <LoadingScreen />
       </>
     );
@@ -36,7 +35,6 @@ function Shoppage() {
 
   return (
     <>
-      <Navbar />
       <div className={styles.container}></div>
       {isActive ? (
         <>

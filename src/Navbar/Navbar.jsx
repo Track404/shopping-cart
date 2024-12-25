@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 import LocalMallRoundedIcon from '@mui/icons-material/LocalMallRounded';
-function Navbar() {
+function Navbar({ clickCardName }) {
+  console;
   return (
     <>
       <nav>
@@ -12,6 +14,12 @@ function Navbar() {
           <Link to="/cart">
             <LocalMallRoundedIcon color="black" fontSize="large" />
           </Link>
+
+          {clickCardName.length > 0 ? (
+            <div className={styles.showNumber}>{clickCardName.length}</div>
+          ) : (
+            true
+          )}
         </div>
       </nav>
     </>

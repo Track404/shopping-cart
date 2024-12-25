@@ -1,13 +1,16 @@
 import DataFetching from '../dataFetching';
 import Card from '../Card/Card';
-import Cartpage from '../Cart/Cart';
 import LoadingScreen from '../LoadingScreen/LoadingScreen';
 import styles from './ShowCard.module.css';
-import { useState } from 'react';
-import { CurrentUserContext } from '../context';
+import { useParams } from 'react-router-dom';
+import { useContext } from 'react';
+
+import { CurrentUserContext } from '../CreateContext';
 function ShowCard() {
-  const [clickCardName, setClickCardName] = useState([]);
-  const { data, error, loading } = DataFetching();
+  const category = useParams();
+  const { clickCardName, setClickCardName } = useContext(CurrentUserContext);
+
+  const { data, error, loading } = DataFetching(category);
 
   if (loading) return <LoadingScreen />;
 
@@ -43,6 +46,7 @@ function ShowCard() {
                         id: theId,
                         title: info.title,
                         price: info.price,
+                        image: info.thumbnail,
                         number: 1,
                       },
                     ]);
@@ -53,9 +57,6 @@ function ShowCard() {
           })}
         </div>
       </div>
-      <CurrentUserContext.Provider value={clickCardName}>
-        <Cartpage />
-      </CurrentUserContext.Provider>
     </>
   );
 }

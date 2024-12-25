@@ -1,3 +1,70 @@
 .container {
   color: black;
 }
+.board {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: 1px solid black;
+}
+
+.container img {
+  margin-top: 10px;
+  border: 2px solid rgb(187, 187, 187);
+  border-radius: 8px;
+  height: 140px;
+  width: 140px;
+}
+.checkoutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 5vw;
+}
+.checkoutContainer a {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.checkoutContainer button {
+  border: none;
+  color: aliceblue;
+  background-color: rgb(27, 27, 27);
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.checkoutContainer button:hover {
+  background-color: rgb(1, 60, 148);
+}
+
+.checkoutContainer button:active {
+  background-color: rgb(0, 46, 115);
+}
+.sum {
+  display: flex;
+  color: black;
+  font-size: 24px;
+  align-items: center;
+  gap: 20px;
+}
+
+.sum h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.noItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(96, 96, 96);
+}

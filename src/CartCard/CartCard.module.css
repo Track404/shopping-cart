@@ -1,0 +1,52 @@
+.container {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+}
+
+.numberCard {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 21px;
+
+  border-radius: 4px;
+}
+
+.leftCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftCard h2 {
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 140px;
+}
+
+.removeButton {
+  border: none;
+  color: aliceblue;
+  background-color: rgb(27, 27, 27);
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 8px;
+}
+.removeButton:hover {
+  background-color: rgb(1, 60, 148);
+}
+.removeButton:active {
+  background-color: rgb(0, 46, 115);
+}
+.numberCard button {
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.numberCard button:hover {
+  background-color: rgb(151, 151, 151);
+}

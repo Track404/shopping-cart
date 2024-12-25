@@ -1,11 +1,15 @@
 import { useState, useEffect } from 'react';
 
-function DataFetching(params) {
+function DataFetching({ category }) {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
-  const url = `https://dummyjson.com/products?limit=0`;
-
+  let url = `https://dummyjson.com/products?limit=0`;
+  if (category !== undefined) {
+    url = `https://dummyjson.com/products/category/${category}`;
+  } else {
+    url = `https://dummyjson.com/products?limit=0`;
+  }
   useEffect(() => {
     fetch(url, { mode: 'cors' })
       .then((response) => {
@@ -17,7 +21,7 @@ function DataFetching(params) {
       .then((response) => setData(response.products))
       .catch((error) => setError(error))
       .finally(() => setLoading(false));
-  }, [url, params]);
+  }, [url, category]);
 
   return {
     data,

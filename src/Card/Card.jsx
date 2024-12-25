@@ -24,7 +24,7 @@ function Card({ info, clickCart }) {
           <h3>{info.price} $</h3>
         </div>
 
-        <button id={info.id} onClick={clickCart}>
+        <button className={styles.addButton} id={info.id} onClick={clickCart}>
           Add To Cart
         </button>
       </div>
