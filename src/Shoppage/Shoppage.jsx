@@ -24,7 +24,13 @@ function Shoppage() {
       .catch((error) => setError(error))
       .finally(() => setLoading(false));
   }, [url]);
-  if (loading) return <LoadingScreen />;
+  if (loading)
+    return (
+      <>
+        <Navbar />
+        <LoadingScreen />
+      </>
+    );
 
   if (error) return <p>A network error was encountered</p>;
 

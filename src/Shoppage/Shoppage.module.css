@@ -16,6 +16,7 @@
 .containerCategoryShow {
   text-transform: capitalize;
   padding: 5px;
+  column-gap: 5px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
@@ -37,6 +38,9 @@
   border: none;
   background-color: white;
 }
+.buttonCategory:hover {
+  color: rgb(0, 94, 201);
+}
 
 .containerCategory:hover {
   transform: scale(1.1);
@@ -44,4 +48,12 @@
 
 .containerCategory h2 {
   margin-bottom: 0;
+}
+
+.containerCategoryShow a:visited {
+  color: rgb(0, 0, 0);
+}
+
+.containerCategoryShow a:hover {
+  color: rgb(0, 94, 201);
 }

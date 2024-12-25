@@ -33,7 +33,15 @@ function ShowCategory() {
         <h1>{category.category.replace('-', ' ')}</h1>
         <div className={styles.containerCard}>
           {data.map((info) => {
-            return <Card key={info.id} info={info} />;
+            return (
+              <Card
+                key={info.id}
+                info={info}
+                clickCart={() => {
+                  alert('bonjour');
+                }}
+              />
+            );
           })}
         </div>
       </div>

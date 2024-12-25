@@ -1,6 +1,6 @@
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
-import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
+import LocalMallRoundedIcon from '@mui/icons-material/LocalMallRounded';
 function Navbar() {
   return (
     <>
@@ -10,7 +10,7 @@ function Navbar() {
           <Link to="/">Home</Link>
           <Link to="/shop">Shop</Link>
           <Link to="/cart">
-            <LocalMallOutlinedIcon color="black" fontSize="large" />
+            <LocalMallRoundedIcon color="black" fontSize="large" />
           </Link>
         </div>
       </nav>

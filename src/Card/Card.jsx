@@ -1,18 +1,19 @@
+/* eslint-disable react/prop-types */
 import styles from './Card.module.css';
 import { Rating } from '@mui/material';
 import StarIcon from '@mui/icons-material/Star';
 
-function Card(info) {
+function Card({ info, clickCart }) {
   return (
     <>
       <div className={styles.card}>
-        <img src={info.info.thumbnail} alt="product image" />
+        <img src={info.thumbnail} alt="product image" />
         <div className={styles.cardInfo}>
-          <h2>{info.info.title}</h2>
+          <h2>{info.title}</h2>
 
           <Rating
             name="text-feedback"
-            value={info.info.rating}
+            value={info.rating}
             readOnly
             precision={0.5}
             emptyIcon={
@@ -20,10 +21,12 @@ function Card(info) {
             }
           />
 
-          <h3>{info.info.price} $</h3>
+          <h3>{info.price} $</h3>
         </div>
 
-        <button>Add To Cart</button>
+        <button id={info.id} onClick={clickCart}>
+          Add To Cart
+        </button>
       </div>
     </>
   );
