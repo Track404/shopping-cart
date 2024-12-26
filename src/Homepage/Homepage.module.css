@@ -18,11 +18,7 @@
   justify-content: center;
   gap: 20px;
   min-height: calc(100vh - 80px);
-<<<<<<< HEAD
   background-image: url(src/assets/low-poly-grid-haikei.svg);
-=======
-  background-image: url(../src/assets/low-poly-grid-haikei.svg);
->>>>>>> 8778dc45faa4bb16383e15a315c13875a508bf7e
   background-repeat: none;
   background-size: cover;
 }
@@ -39,11 +35,7 @@
   font-weight: bold;
   border: 2px white solid;
   border-radius: 4px;
-<<<<<<< HEAD
   background-image: url(src/assets/low-poly-grid-haikei.svg);
-=======
-  background-image: url(../src/assets/low-poly-grid-haikei.svg);
->>>>>>> 8778dc45faa4bb16383e15a315c13875a508bf7e
 }
 
 .buttonLink:hover {
