@@ -18,7 +18,7 @@
   justify-content: center;
   gap: 20px;
   min-height: calc(100vh - 80px);
-  background-image: url('./assets/low-poly-grid-haikei.svg');
+  background-image: url('src/assets/low-poly-grid-haikei.svg');
   background-repeat: none;
   background-size: cover;
 }
@@ -35,7 +35,7 @@
   font-weight: bold;
   border: 2px white solid;
   border-radius: 4px;
-  background-image: url('./assets/low-poly-grid-haikei.svg');
+  background-image: url('src/assets/low-poly-grid-haikei.svg');
 }
 
 .buttonLink:hover {
