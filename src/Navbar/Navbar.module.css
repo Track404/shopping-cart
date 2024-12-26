@@ -28,7 +28,7 @@ a:hover {
 }
 
 .logo {
-  background-image: url('src/assets/sanix.svg');
+  background-image: url(../src/assets/sanix.svg);
   background-repeat: none;
   background-size: cover;
   width: 80px;
