@@ -49,3 +49,14 @@ a:hover {
   background-color: rgb(255, 34, 34);
   border-radius: 100%;
 }
+@media (max-width: 600px) {
+  .navLink {
+    gap: 5vw;
+  }
+  nav {
+    padding-right: 20px;
+  }
+  .showNumber {
+    right: 13px;
+  }
+}

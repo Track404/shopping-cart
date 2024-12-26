@@ -20,3 +20,14 @@
   padding-top: 2vh;
   padding-left: 2vw;
 }
+
+@media (max-width: 1000px) {
+  .containerCard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .containerCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

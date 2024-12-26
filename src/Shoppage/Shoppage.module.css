@@ -19,6 +19,7 @@
   column-gap: 5px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  align-items: center;
 }
 
 .containerCategoryShow a {
@@ -56,4 +57,10 @@
 
 .containerCategoryShow a:hover {
   color: rgb(0, 94, 201);
+}
+
+@media (max-width: 600px) {
+  .containerCategoryShow {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

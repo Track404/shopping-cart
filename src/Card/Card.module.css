@@ -49,3 +49,17 @@ h2 {
 .addButton:active {
   background-color: rgb(0, 46, 115);
 }
+
+@media (max-width: 1000px) {
+  .card {
+    min-width: 30vw;
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    min-width: 40vw;
+    max-height: 50vh;
+  }
+}
