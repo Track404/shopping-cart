@@ -19,7 +19,7 @@ function CartCard({ info, removeItem, addItem, substractItem }) {
           </button>
         </div>
         <div className={styles.cardInfo}>
-          <h3>{info.price} $</h3>
+          <h3>{Math.round(info.price * info.number * 100) / 100} $</h3>
         </div>
         <button className={styles.removeButton} onClick={removeItem}>
           Remove

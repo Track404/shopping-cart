@@ -17,7 +17,7 @@ nav {
 a {
   font-weight: 500;
   font-size: 22px;
-
+  color: white;
   text-decoration: none;
 }
 a:visited {
@@ -28,7 +28,7 @@ a:hover {
 }
 
 .logo {
-  background-image: url('src/assets/sanix.svg');
+  background-image: url('/sanix.svg');
   background-repeat: none;
   background-size: cover;
   width: 80px;
