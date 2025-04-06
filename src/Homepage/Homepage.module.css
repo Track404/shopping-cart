@@ -18,10 +18,11 @@
   justify-content: center;
   gap: 20px;
   min-height: calc(100vh - 80px);
-  background-image: url('src/assets/low-poly-grid-haikei.svg');
-  background-repeat: none;
+  background-image: url('/home.svg');
+  background-repeat: no-repeat;
   background-size: cover;
 }
+
 .titleHomepage {
   display: flex;
   flex-direction: column;
@@ -35,7 +36,7 @@
   font-weight: bold;
   border: 2px white solid;
   border-radius: 4px;
-  background-image: url('src/assets/low-poly-grid-haikei.svg');
+  background-image: url('/home.svg');
 }
 
 .buttonLink:hover {
