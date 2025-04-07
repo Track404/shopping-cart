@@ -29,17 +29,17 @@ function Cartpage() {
   return (
     <>
       <Collapse in={open}>
-        <Alert variant="filled" severity="success">
+        <Alert className={styles.alert} variant="filled" severity="success">
           Confirm Checkout
         </Alert>
       </Collapse>
-
       <div className={styles.board}>
         <p>item</p>
         <p>number</p>
         <p>price</p>
         <p></p>
       </div>
+
       {clickCardName.length > 0 ? (
         <div className={styles.container}>
           {clickCardName.map((info) => {
