@@ -20,9 +20,7 @@ a {
   color: white;
   text-decoration: none;
 }
-a:visited {
-  color: white;
-}
+
 a:hover {
   color: rgb(0, 94, 201);
 }

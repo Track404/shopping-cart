@@ -25,6 +25,7 @@
 .containerCategoryShow a {
   font-size: 16px;
   padding-bottom: 4px;
+  color: black;
 }
 
 .containerYes {
@@ -37,6 +38,7 @@
 .buttonCategory,
 .buttonCategoryShow {
   border: none;
+
   background-color: white;
 }
 .buttonCategory:hover {
@@ -59,9 +61,6 @@
   color: rgb(0, 94, 201);
 }
 
-a {
-  color: black;
-}
 @media (max-width: 600px) {
   .containerCategoryShow {
     grid-template-columns: repeat(3, 1fr);
