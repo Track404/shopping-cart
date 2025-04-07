@@ -6,7 +6,7 @@ function Navbar({ clickCardName }) {
   console;
   return (
     <>
-      <nav>
+      <nav className={styles.navbar}>
         <div className={styles.logo}></div>
         <div className={styles.navLink}>
           <Link to="/">Home</Link>

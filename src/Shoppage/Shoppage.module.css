@@ -59,6 +59,9 @@
   color: rgb(0, 94, 201);
 }
 
+a {
+  color: black;
+}
 @media (max-width: 600px) {
   .containerCategoryShow {
     grid-template-columns: repeat(3, 1fr);
